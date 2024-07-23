@@ -24,5 +24,5 @@ Goals: To extract insights into team and player performance, understand match dy
 
 - Potential Roadblocks and Challenges
 
-Data Quality: Issues such as missing values or inconsistencies in the dataset will be addressed through thorough data validation and cleaning procedures using Python libraries like Pandas.
-Seasonal Constraints: The current analysis will focus on the ongoing MLS season, leveraging fresh and relevant data to provide timely insights. The completion of the Premier League season limits data availability from that league
+Data Quality: Issues such as missing values or inconsistencies in the dataset will be addressed through thorough data validation and cleaning procedures using Python libraries like dask.
+Seasonal Constraints: The current analysis will focus on the ongoing MLS season, leveraging fresh and relevant data to provide timely insights. The completion of the Major League season limits data availability from that league

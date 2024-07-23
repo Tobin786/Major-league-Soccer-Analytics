@@ -665,7 +665,7 @@ goals_features = [
 ]
 
 attack_features = [
-    'ontarget scoring att', 'total scoring att', 'open play pass', 'blocked scoring att'
+    'ontarget scoring att', 'total scoring att', 'open play pass'
 ]
 
 defense_features = [
@@ -676,10 +676,10 @@ possession_features = [
     'successful open play pass', 'successful short pass', 'accurate pass'
 ]
 
-# Define weights for each feature within subsets
+# Define weights for each feature within subsets 
 weights = {
     'goals': [0.80, -0.80],
-    'attack': [0.15, 0.20, 0.10, 0.10],
+    'attack': [0.15, 0.20, 0.10],
     'defense': [0.15, 0.10, 0.15],
     'possession': [0.25, 0.25, 0.25]
 }
@@ -733,6 +733,7 @@ averages_file.to_csv('MLS Cleaned Dataset/Team Averages with weighted scores.csv
 print("\nAll Seasons with weighted scores:")
 print(merged_file[['club id','points', 'goal_weighted_score', 'attack_weighted_score', 'defense_weighted_score', 'possession_weighted_score']])
 merged_file.to_csv('MLS Cleaned Dataset/All Seasons with weighted scores.csv', index=False)
+
 
 
 ##Checking the weighted score correlation
@@ -832,19 +833,21 @@ current_season_data.to_csv('mls-2024 per game.csv', index=False)
 ### Calculating weighted Score
 
 weights = {
-    'goals': 0.3,
-    'attack': 0.3,
-    'defense': 0.2,
-    'possession': 0.2
+    'goals': [0.80, -0.80],
+    'attack': [0.15, 0.20, 0.10],
+    'defense': [0.15, 0.10, 0.15],
+    'possession': [0.25, 0.25, 0.25]
 }
 
-goals_features = ['goals', 'goal assist', 'att pen goal']
-attack_features = ['accurate pass', 'ontarget scoring att', 'open play pass']
-defense_features = ['goals conceded', 'total clearance', 'interception']
-possession_features = ['total pass', 'successful open play pass', 'touches']
+goals_features = ['goals', 'goals conceded']
+attack_features = ['ontarget scoring att', 'total scoring att', 'open play pass']
+defense_features = ['saves', 'total clearance', 'interception']
+possession_features = ['successful open play pass', 'successful short pass', 'accurate pass']
 
-def calculate_weighted_score(df, features, weight):
-    return df[features].sum(axis=1) * weight
+
+# Function to calculate weighted score for each feature within each subset
+def calculate_weighted_score(df, features, weights):
+    return (df[features] * weights).sum(axis=1).round(2)
 
 # Calculate weighted scores for current season data
 current_season_data['goal_weighted_score'] = calculate_weighted_score(current_season_data, goals_features, weights['goals'])
@@ -857,6 +860,7 @@ current_season_data.fillna(0, inplace=True)
 
 # Save normalized data
 current_season_data.to_csv('mls-2024 per game.csv', index=False)
+
 
 
 
@@ -878,7 +882,7 @@ data_to_save = data_to_save[['club id', 'club name']]
 data_to_save.to_csv('current_season_predictions.csv', index=False)
 
 # Print for reference
-print("Current Season Data with Predicted Points Averages:")
+print("Current Season Data with Predicted League Position:")
 print(data_to_save)
 
 

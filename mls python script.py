@@ -807,7 +807,7 @@ print(f"R-squared: {r2_averages}")
 
 ### Reading and Normalize current season
 
-current_season_data = pd.read_csv('mls-2024-june22.csv')
+current_season_data = pd.read_csv('mls-2024-july22.csv')
 
 # Define columns to normalize
 columns_to_normalize = ['accurate cross', 'accurate long balls', 'accurate pass', 'aerial lost', 'aerial won', 

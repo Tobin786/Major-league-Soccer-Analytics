@@ -6,7 +6,7 @@ folder_data = 'MLS Cleaned Dataset'
 
 if not os.path.exists(folder_data):
     # Create the folder
-    os.makedirs(folder_name)
+    os.makedirs(folder_data)
     print(f"Folder '{folder_data}' created.")
 else:
     print(f"Folder '{folder_data}' already exists.")
@@ -220,19 +220,20 @@ merged_data_dask = merge_datasets(years_to_merge)
 
 # Function to convert columns to int64 except 'club name'
 def convert_to_int64_if_not_club_name(df):
-    for col in df.columns:
-        if col != 'club name':
-            # Convert to numeric, coercing errors to NaN, then to integer
-            df[col] = dd.to_numeric(df[col], errors='coerce').astype('Int64')
-            df[col] = df[col].fillna(0) 
-    return df
+ for col in df.columns:
+  if col != 'club name':
+   # Convert to numeric, coercing errors to NaN, then to integer
+   df[col] = dd.to_numeric(df[col], errors='coerce')
+   df[col] = df[col].fillna(0)
+   df[col] =df[col].astype('int64')
+ return df
 
 # Convert columns to int64
 converted_data = convert_to_int64_if_not_club_name(merged_data_dask)
 
 
-# Convert columns to int64
-converted_data = convert_to_int64_if_not_club_name(merged_data_dask)
+# filling empty
+converted_data = converted_data.fillna(0)
 # Save merged dataset to CSV using Dask's to_csv method
 merged_data_dask.to_csv('MLS Cleaned Dataset/All merged.csv', index=False, single_file=True)
 

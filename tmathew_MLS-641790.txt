@@ -1,0 +1,376 @@
+created virtual environment CPython3.11.5.final.0-64 in 1445ms
+  creator CPython3Posix(dest=/gpfs/scratch/an-tmathew/MLS/ENV, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/an-tmathew/.local/share/virtualenv)
+    added seed packages: pip==24.1.2, setuptools==70.1.1, wheel==0.43.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Requirement already satisfied: pip in ./ENV/lib/python3.11/site-packages (24.1.2)
+Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v4, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/numpy-1.26.4+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pandas-2.2.1+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/matplotlib-3.9.0+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/dask-2024.5.1+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scikit_learn-1.5.0+computecanada-cp311-cp311-linux_x86_64.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/seaborn-0.13.2+computecanada-py3-none-any.whl
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_dateutil-2.9.0.post0+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pytz-2024.1+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tzdata-2024.1+computecanada-py2.py3-none-any.whl (from pandas)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/contourpy-1.2.1+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cycler-0.12.1+computecanada-py3-none-any.whl (from matplotlib)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fonttools-4.53.0+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/kiwisolver-1.4.5+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/packaging-24.1+computecanada-py3-none-any.whl (from matplotlib)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/pillow-10.3.0+computecanada-cp311-cp311-linux_x86_64.whl (from matplotlib)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyparsing-3.1.2+computecanada-py3-none-any.whl (from matplotlib)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/click-8.1.7+computecanada-py3-none-any.whl (from dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cloudpickle-3.0.0+computecanada-py3-none-any.whl (from dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fsspec-2024.6.1+computecanada-py3-none-any.whl (from dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/partd-1.4.2+computecanada-py3-none-any.whl (from dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/x86-64-v3/PyYAML-6.0.1+computecanada-cp311-cp311-linux_x86_64.whl (from dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/toolz-0.12.1+computecanada-py3-none-any.whl (from dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/importlib_metadata-7.0.1+computecanada-py3-none-any.whl (from dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo2023/generic/scipy-1.13.1+computecanada-cp311-cp311-linux_x86_64.whl (from scikit-learn)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/joblib-1.4.2+computecanada-py3-none-any.whl (from scikit-learn)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/threadpoolctl-3.5.0+computecanada-py3-none-any.whl (from scikit-learn)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/zipp-3.17.0+computecanada-py3-none-any.whl (from importlib-metadata>=4.13.0->dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/locket-1.0.0+computecanada-py2.py3-none-any.whl (from partd>=1.2.0->dask)
+Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/six-1.16.0+computecanada-py2.py3-none-any.whl (from python-dateutil>=2.8.2->pandas)
+Installing collected packages: pytz, zipp, tzdata, toolz, threadpoolctl, six, pyyaml, pyparsing, pillow, packaging, numpy, locket, kiwisolver, joblib, fsspec, fonttools, cycler, cloudpickle, click, scipy, python-dateutil, partd, importlib-metadata, contourpy, scikit-learn, pandas, matplotlib, dask, seaborn
+Successfully installed click-8.1.7+computecanada cloudpickle-3.0.0+computecanada contourpy-1.2.1+computecanada cycler-0.12.1+computecanada dask-2024.5.1+computecanada fonttools-4.53.0+computecanada fsspec-2024.6.1+computecanada importlib-metadata-7.0.1+computecanada joblib-1.4.2+computecanada kiwisolver-1.4.5+computecanada locket-1.0.0+computecanada matplotlib-3.9.0+computecanada numpy-1.26.4+computecanada packaging-24.1+computecanada pandas-2.2.1+computecanada partd-1.4.2+computecanada pillow-10.3.0+computecanada pyparsing-3.1.2+computecanada python-dateutil-2.9.0.post0+computecanada pytz-2024.1+computecanada pyyaml-6.0.1+computecanada scikit-learn-1.5.0+computecanada scipy-1.13.1+computecanada seaborn-0.13.2+computecanada six-1.16.0+computecanada threadpoolctl-3.5.0+computecanada toolz-0.12.1+computecanada tzdata-2024.1+computecanada zipp-3.17.0+computecanada
+/gpfs/scratch/an-tmathew/MLS/ENV/lib/python3.11/site-packages/dask/dataframe/__init__.py:31: FutureWarning: 
+Dask dataframe query planning is disabled because dask-expr is not installed.
+
+You can install it with `pip install dask[dataframe]` or `conda install dask`.
+This will raise in a future version.
+
+  warnings.warn(msg, FutureWarning)
+Folder 'MLS Cleaned Dataset' already exists.
+Cleaning 2023 Dataset
+Cleaning 2022 Dataset
+Cleaning 2021 Dataset
+Cleaning 2020 Dataset
+Cleaning 2011-2019 Datasets
+Cleaned dataset for 2011 saved to MLS Cleaned Dataset/mls stats_2011 cleaned.csv
+Cleaned dataset for 2012 saved to MLS Cleaned Dataset/mls stats_2012 cleaned.csv
+Cleaned dataset for 2013 saved to MLS Cleaned Dataset/mls stats_2013 cleaned.csv
+Cleaned dataset for 2014 saved to MLS Cleaned Dataset/mls stats_2014 cleaned.csv
+Cleaned dataset for 2015 saved to MLS Cleaned Dataset/mls stats_2015 cleaned.csv
+Cleaned dataset for 2016 saved to MLS Cleaned Dataset/mls stats_2016 cleaned.csv
+Cleaned dataset for 2017 saved to MLS Cleaned Dataset/mls stats_2017 cleaned.csv
+Cleaned dataset for 2018 saved to MLS Cleaned Dataset/mls stats_2018 cleaned.csv
+Cleaned dataset for 2019 saved to MLS Cleaned Dataset/mls stats_2019 cleaned.csv
+Checking for common columns among all seasons and removing the uncommon columns
+Dataset for 2011: Delayed('int-2d6d72e7-9864-4e3d-a2b1-5e51879f5026') rows, 119 columns
+Dataset for 2012: Delayed('int-b7844ca3-7272-41b7-9b0f-1e895a13ebb2') rows, 117 columns
+Dataset for 2013: Delayed('int-20791631-4dd7-4c07-bb40-95a2c020fbd5') rows, 118 columns
+Dataset for 2014: Delayed('int-13039c17-9f45-483f-bbeb-7fb86e280a5b') rows, 121 columns
+Dataset for 2015: Delayed('int-e434bbc2-a0e4-4b19-9f03-0a78383a78cf') rows, 121 columns
+Dataset for 2016: Delayed('int-f390db92-d54a-4326-a4d5-7641a4d57b99') rows, 122 columns
+Dataset for 2017: Delayed('int-a815a5e2-b9a8-4e19-be77-53cba3274891') rows, 122 columns
+Dataset for 2018: Delayed('int-30e45df1-8249-447d-b01b-07a349227a74') rows, 122 columns
+Dataset for 2019: Delayed('int-8a03cf62-dcd6-4a06-9725-d61f6dbdc37f') rows, 122 columns
+Dataset for 2020: Delayed('int-9d7562af-8d30-4a9d-80f5-6d71913afec1') rows, 125 columns
+Dataset for 2021: Delayed('int-c05d6b5f-39a3-40ee-b040-dda23a291ee4') rows, 125 columns
+Dataset for 2022: Delayed('int-b158baef-266c-4e24-8a7d-9102841bdadf') rows, 125 columns
+Dataset for 2023: Delayed('int-901413de-9eff-472d-8466-87b560602f15') rows, 125 columns
+Common columns across all datasets: 116 columns
+{'accurate launches', 'att lf goal', 'failed cross nocorner', 'total draws', 'club id', 'ground duel won', 'att pen goal', 'blocked scoring att', 'attempts conceded ibox', 'interception', 'aerial lost', 'failed back zone pass', 'hand ball', 'attempts conceded obox', 'failed launches', 'accurate layoffs', 'open play pass', 'total matches', 'away wins', 'fk foul lost', 'accurate long balls', 'goals', 'total clearance', 'total wins', 'accurate fwd zone pass per', 'att obox goal', 'failed layoffs', 'accurate goal kicks', 'att pen miss', 'away draws', 'successful open play pass', 'accurate back zone pass', 'att freekick goal', 'other goals', 'accurate shooting per', 'away matches', 'home draws', 'accurate cross', 'failed corner intobox', 'total att assist', 'duel', 'good claim', 'att setpiece', 'att hd goal', 'away losses', 'total losses', 'post scoring att', 'total red card', 'last man tackle', 'corner taken', 'accurate pass', 'ground duel', 'accurate corners intobox', 'shots conc onfield', 'lost tackle', 'penalty won', 'accurate fwd zone pass', 'goals conceded', 'won tackle', 'won corners', 'pen goals conceded', 'goal conversion per', 'club abbreviation', 'ontarget scoring att', 'yellow card', 'aerial won', 'poss lost all', 'club name', 'ball recovery', 'penalty conceded', 'failed fwd zone pass', 'home losses', 'possession percentage', 'goals conceded ibox', 'failed cross', 'aerial duel', 'tackle success per', 'own goals', 'ground duel lost', 'accurate throws', 'own goals accrued', 'penalty save', 'accurate pass per', 'accurate cross per', 'games played', 'total pass', 'att ibox goal', 'failed throws', 'inaccurate goal kicks', 'home matches', 'red card', 'successful dribble', 'successfull short pass', 'fk foul won', 'failed long balls', 'goal assist', 'drops', 'accurate cross nocorner', 'total pass miss', 'home wins', 'goals conceded obox', 'outfielder block', 'saves', 'successfull dribble', 'duel lost', 'second yellow', 'att rf goal', 'total scoring att', 'att pen taken', 'failed short pass', 'successful short pass', 'clean sheet', 'duel won', 'failed dribble', 'total offside', 'clearance off line'}
+Excluded columns across all datasets: 9 columns
+{'times tackled', 'successful fifty fifty', 'fifty fifty', 'pts dropped winning pos', 'putthrough block dist', 'successfull fifty fifty', 'attempted tackle foul', 'putthrough block dist won', 'pts gained losing pos'}
+Cleaned dataset for 2011 saved with only common columns.
+Cleaned dataset for 2012 saved with only common columns.
+Cleaned dataset for 2013 saved with only common columns.
+Cleaned dataset for 2014 saved with only common columns.
+Cleaned dataset for 2015 saved with only common columns.
+Cleaned dataset for 2016 saved with only common columns.
+Cleaned dataset for 2017 saved with only common columns.
+Cleaned dataset for 2018 saved with only common columns.
+Cleaned dataset for 2019 saved with only common columns.
+Cleaned dataset for 2020 saved with only common columns.
+Cleaned dataset for 2021 saved with only common columns.
+Cleaned dataset for 2022 saved with only common columns.
+Cleaned dataset for 2023 saved with only common columns.
+Calculating points for each season
+Dataset for 2011 saved with points.
+Dataset for 2012 saved with points.
+Dataset for 2013 saved with points.
+Dataset for 2014 saved with points.
+Dataset for 2015 saved with points.
+Dataset for 2016 saved with points.
+Dataset for 2017 saved with points.
+Dataset for 2018 saved with points.
+Dataset for 2019 saved with points.
+Dataset for 2020 saved with points.
+Dataset for 2021 saved with points.
+Dataset for 2022 saved with points.
+Dataset for 2023 saved with points.
+Checking the shape of the final cleaned datasets
+Final cleaned dataset for 2011: Delayed('int-6a86c2b9-37f8-43da-b879-f5c1dd9a8e94') rows, 117 columns
+Final cleaned dataset for 2012: Delayed('int-dde00815-99e0-46d2-8111-d44cdcac2f8c') rows, 117 columns
+Final cleaned dataset for 2013: Delayed('int-9553b8a5-575f-491b-a2f1-613a8c8d26bc') rows, 117 columns
+Final cleaned dataset for 2014: Delayed('int-bd3ca105-f18d-4c90-a4ae-67bc998439aa') rows, 117 columns
+Final cleaned dataset for 2015: Delayed('int-8e0c9bad-ff45-4fd0-bb45-c9a72503d73e') rows, 117 columns
+Final cleaned dataset for 2016: Delayed('int-42a3702b-52fb-4d27-b365-4cf1d09d2d9e') rows, 117 columns
+Final cleaned dataset for 2017: Delayed('int-7e4a9dc2-9dc3-4840-ae9a-7259d7db6f3e') rows, 117 columns
+Final cleaned dataset for 2018: Delayed('int-e0ecdb2c-294c-4788-a0df-f71fefc74bbe') rows, 117 columns
+Final cleaned dataset for 2019: Delayed('int-899256a3-dee2-472c-bb8b-61123b5c9575') rows, 117 columns
+Final cleaned dataset for 2020: Delayed('int-a68624b4-f755-4b2e-a5ae-43520d9d5650') rows, 117 columns
+Final cleaned dataset for 2021: Delayed('int-21721567-a351-4f86-8394-d43c9703ba2e') rows, 117 columns
+Final cleaned dataset for 2022: Delayed('int-174ce652-bd90-4588-801b-82d4672539e3') rows, 117 columns
+Final cleaned dataset for 2023: Delayed('int-741b294f-677a-4b85-a4b3-2ae689df9b4c') rows, 117 columns
+Merged dataset saved to 'All merged.csv'.
+Team averages and medians calculated and saved to 'Team Averages.csv' and 'Team Medians.csv'.
+
+Correlation Matrix for Averages Goals:
+                        goals  att ibox goal  ...  goals conceded obox    points
+goals                1.000000       0.983943  ...            -0.664541  0.870448
+att ibox goal        0.983943       1.000000  ...            -0.659049  0.874348
+att obox goal        0.423582       0.255103  ...            -0.255327  0.277688
+att lf goal          0.671722       0.638372  ...            -0.358543  0.608973
+att rf goal          0.752537       0.736586  ...            -0.486099  0.636434
+att pen goal         0.559227       0.571986  ...            -0.239563  0.617065
+goals conceded      -0.403545      -0.423987  ...             0.445626 -0.736200
+goals conceded ibox -0.257427      -0.281259  ...             0.210829 -0.635118
+goals conceded obox -0.664541      -0.659049  ...             1.000000 -0.612165
+points               0.870448       0.874348  ...            -0.612165  1.000000
+
+[10 rows x 10 columns]
+
+Correlation Matrix for Averages Attack:
+                      total scoring att  ...    points
+total scoring att              1.000000  ...  0.750862
+ontarget scoring att           0.920408  ...  0.820559
+att ibox goal                  0.695649  ...  0.874348
+att obox goal                  0.408104  ...  0.277688
+att lf goal                    0.629644  ...  0.608973
+att rf goal                    0.466360  ...  0.636434
+att setpiece                   0.615312  ...  0.502468
+att freekick goal              0.447569  ...  0.424419
+points                         0.750862  ...  1.000000
+
+[9 rows x 9 columns]
+
+Correlation Matrix for Averages Defense:
+                        saves  clean sheet  ...  goals conceded obox    points
+saves                1.000000    -0.593782  ...            -0.082875 -0.382362
+clean sheet         -0.593782     1.000000  ...            -0.249496  0.709684
+total clearance      0.108634    -0.028412  ...             0.447595 -0.431116
+interception        -0.299192     0.264121  ...             0.360373 -0.144746
+outfielder block     0.618672    -0.377275  ...            -0.004182 -0.299441
+goals conceded       0.415585    -0.863105  ...             0.445626 -0.736200
+goals conceded ibox  0.476584    -0.873608  ...             0.210829 -0.635118
+goals conceded obox -0.082875    -0.249496  ...             1.000000 -0.612165
+points              -0.382362     0.709684  ...            -0.612165  1.000000
+
+[9 rows x 9 columns]
+
+Correlation Matrix for Averages Possession:
+                           possession percentage  ...    points
+possession percentage                   1.000000  ...  0.360443
+accurate pass                           0.886823  ...  0.320832
+successful open play pass               0.612232  ...  0.460634
+successful dribble                      0.226778  ...  0.533802
+points                                  0.360443  ...  1.000000
+
+[5 rows x 5 columns]
+
+Correlation Matrix for Medians Goals:
+                        goals  att ibox goal  ...  goals conceded obox    points
+goals                1.000000       0.970233  ...            -0.523636  0.792685
+att ibox goal        0.970233       1.000000  ...            -0.546527  0.825867
+att obox goal        0.291896       0.136852  ...            -0.214364  0.187242
+att lf goal          0.599956       0.565518  ...            -0.287455  0.538860
+att rf goal          0.715242       0.705716  ...            -0.341123  0.590627
+att pen goal         0.368349       0.313740  ...            -0.137436  0.503593
+goals conceded      -0.405380      -0.460488  ...             0.542250 -0.757051
+goals conceded ibox -0.260205      -0.313820  ...             0.357012 -0.663809
+goals conceded obox -0.523636      -0.546527  ...             1.000000 -0.484783
+points               0.792685       0.825867  ...            -0.484783  1.000000
+
+[10 rows x 10 columns]
+
+Correlation Matrix for Medians Attack:
+                      total scoring att  ...    points
+total scoring att              1.000000  ...  0.694975
+ontarget scoring att           0.860818  ...  0.748739
+att ibox goal                  0.665224  ...  0.825867
+att obox goal                  0.329762  ...  0.187242
+att lf goal                    0.500807  ...  0.538860
+att rf goal                    0.525465  ...  0.590627
+att setpiece                   0.595309  ...  0.528732
+att freekick goal              0.324470  ...  0.352300
+points                         0.694975  ...  1.000000
+
+[9 rows x 9 columns]
+
+Correlation Matrix for Medians Defense:
+                        saves  clean sheet  ...  goals conceded obox    points
+saves                1.000000    -0.484999  ...            -0.031030 -0.396597
+clean sheet         -0.484999     1.000000  ...            -0.399086  0.509500
+total clearance      0.172462    -0.128321  ...             0.293817 -0.341424
+interception        -0.182113     0.192532  ...             0.223271 -0.195067
+outfielder block     0.511468    -0.512141  ...             0.101758 -0.232780
+goals conceded       0.442637    -0.767349  ...             0.542250 -0.757051
+goals conceded ibox  0.556049    -0.798263  ...             0.357012 -0.663809
+goals conceded obox -0.031030    -0.399086  ...             1.000000 -0.484783
+points              -0.396597     0.509500  ...            -0.484783  1.000000
+
+[9 rows x 9 columns]
+
+Correlation Matrix for Medians Possession:
+                           possession percentage  ...    points
+possession percentage                   1.000000  ...  0.359733
+accurate pass                           0.852100  ...  0.301604
+successful open play pass               0.637057  ...  0.452911
+successful dribble                      0.113529  ...  0.472062
+points                                  0.359733  ...  1.000000
+
+[5 rows x 5 columns]
+Folder 'Images' already exists.
+Mean Squared Error (Average of Teams): 2.536776088157005
+
+Coefficients:
+            Coefficient
+goals          0.691315
+attack         0.012009
+defense        0.048412
+possession    -0.001247
+Mean Squared Error (Merged of Teams): 23.147926690612714
+
+Coefficients:
+            Coefficient
+goals          0.752162
+attack         0.000787
+defense        0.008591
+possession    -0.000050
+Mean Squared Error (Median of Teams): 2.6335112921996493
+
+Coefficients:
+            Coefficient
+goals          0.721874
+attack        -0.008910
+defense        0.031992
+possession     0.001453
+Team Median with weighted scores:
+    club id  points  ...  defense_weighted_score  possession_weighted_score
+23       31    62.0  ...                    0.03                       0.66
+29  2326207    56.0  ...                    0.23                       0.12
+22       29    55.0  ...                    0.04                       0.74
+20       28    55.0  ...                    0.17                       0.74
+0         5    53.0  ...                    0.23                       0.36
+16       23    53.0  ...                    0.22                       0.62
+13       20    52.0  ...                    0.17                       0.29
+7        12    51.0  ...                    0.21                       0.47
+3         8    51.0  ...                    0.20                       0.60
+12       19    50.0  ...                    0.19                       0.50
+27       33    49.5  ...                    0.11                       0.40
+24       30    49.0  ...                    0.11                       0.36
+9        14    49.0  ...                    0.22                       0.38
+1         6    49.0  ...                    0.16                       0.48
+28   261248    47.5  ...                    0.14                       0.57
+10       16    47.0  ...                    0.23                       0.24
+17       24    46.0  ...                    0.20                       0.23
+8        13    46.0  ...                    0.28                       0.32
+4         9    45.0  ...                    0.24                       0.27
+5        10    44.0  ...                    0.25                       0.36
+18       15    43.5  ...                    0.25                       0.39
+25  1406988    42.5  ...                    0.11                       0.60
+11       18    42.0  ...                    0.18                       0.34
+26       32    41.0  ...                    0.13                       0.65
+21       27    41.0  ...                    0.26                       0.39
+19       26    41.0  ...                    0.21                       0.50
+6        11    40.0  ...                    0.24                       0.31
+2         7    37.0  ...                    0.18                       0.31
+14       21    36.0  ...                    0.19                       0.47
+15       22    31.5  ...                    0.31                       0.13
+
+[30 rows x 6 columns]
+
+Team Averages with weighted scores:
+    club id  points  ...  defense_weighted_score  possession_weighted_score
+23       31   62.00  ...                    0.08                       0.71
+29  2326207   56.00  ...                    0.23                       0.12
+22       29   54.60  ...                    0.05                       0.75
+16       23   54.18  ...                    0.25                       0.54
+0         5   54.00  ...                    0.22                       0.29
+20       28   52.00  ...                    0.18                       0.73
+13       20   50.82  ...                    0.24                       0.33
+7        12   50.45  ...                    0.26                       0.52
+12       19   50.27  ...                    0.23                       0.45
+1         6   50.18  ...                    0.23                       0.47
+26       33   49.50  ...                    0.12                       0.41
+3         8   47.91  ...                    0.24                       0.51
+9        14   47.64  ...                    0.26                       0.32
+27   261248   47.50  ...                    0.14                       0.59
+24       30   47.33  ...                    0.12                       0.36
+17       24   47.27  ...                    0.23                       0.27
+18       15   44.70  ...                    0.24                       0.41
+4         9   44.45  ...                    0.25                       0.27
+10       16   44.09  ...                    0.29                       0.25
+11       18   43.91  ...                    0.21                       0.33
+19       26   42.86  ...                    0.18                       0.49
+21       27   42.80  ...                    0.26                       0.42
+8        13   42.64  ...                    0.30                       0.28
+28  1406988   42.50  ...                    0.11                       0.62
+5        10   41.82  ...                    0.28                       0.38
+6        11   41.27  ...                    0.27                       0.28
+25       32   41.00  ...                    0.14                       0.67
+2         7   40.00  ...                    0.22                       0.27
+14       21   39.91  ...                    0.22                       0.44
+15       22   31.25  ...                    0.32                       0.12
+
+[30 rows x 6 columns]
+
+All Seasons with weighted scores:
+     club id  points  ...  defense_weighted_score  possession_weighted_score
+0          5      46  ...                    0.17                       0.30
+1          6      51  ...                    0.17                       0.13
+2          7      49  ...                    0.13                       0.18
+3          8      47  ...                    0.17                       0.13
+4          9      28  ...                    0.23                       0.02
+..       ...     ...  ...                     ...                        ...
+236       30      69  ...                    0.11                       0.42
+237        9      55  ...                    0.16                       0.50
+238  2326207      56  ...                    0.17                       0.23
+239       29      51  ...                    0.05                       0.62
+240        8      57  ...                    0.08                       0.72
+
+[241 rows x 6 columns]
+Team Median Model Performance:
+MSE: 6.902673867950678
+R-squared: 0.9131435654504634
+
+Team Averages Model Performance:
+MSE: 0.8226640476756332
+R-squared: 0.9899373017026717
+Current Season Data with Predicted League Position:
+    club id                  club name
+3         8              Columbus Crew
+7        12                  LA Galaxy
+24       32             Inter Miami CF
+12       18          Houston Dynamo FC
+13       19             Real Salt Lake
+10       15                CF Montréal
+16       23        Seattle Sounders FC
+22       30              FC Cincinnati
+15       21                 Toronto FC
+18       26               Orlando City
+20       28           New York City FC
+1         6       Sporting Kansas City
+11       16     Vancouver Whitecaps FC
+21       29             Atlanta United
+4         9     New England Revolution
+9        14           Portland Timbers
+23       31  Los Angeles Football Club
+14       20                  FC Dallas
+2         7            Colorado Rapids
+6        11            Chicago Fire FC
+25       33               Nashville SC
+26   261248                  Austin FC
+17       24         Philadelphia Union
+0         5         New York Red Bulls
+27  1406988               Charlotte FC
+19       27           Minnesota United
+5        10       San Jose Earthquakes
+8        13                D.C. United
+28  2326207          St. Louis CITY SC

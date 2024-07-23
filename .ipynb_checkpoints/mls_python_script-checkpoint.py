@@ -220,12 +220,16 @@ merged_data_dask = merge_datasets(years_to_merge)
 
 # Function to convert columns to int64 except 'club name'
 def convert_to_int64_if_not_club_name(df):
-    for col in df.columns:
-        if col != 'club name':
-            # Convert to numeric, coercing errors to NaN, then to integer
-            df[col] = dd.to_numeric(df[col], errors='coerce').astype('Int64')
-            df[col] = df[col].fillna(0) 
-    return df
+  for col in df.columns:
+    if col != 'club name':
+      # Try converting to numeric, ignoring errors
+      df[col] = dd.to_numeric(df[col], errors='coerce')
+      # Check if conversion was successful (dtype is numeric)
+        df[col] = df[col].astype('Int64')  # Convert to int64
+      else:
+        # Handle non-numeric data 
+        df[col] = df[col].fillna(0)
+  return df
 
 # Convert columns to int64
 converted_data = convert_to_int64_if_not_club_name(merged_data_dask)
